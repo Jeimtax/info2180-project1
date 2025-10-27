@@ -9,3 +9,53 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+header > .container {
+    display: flex;
+    gap: 80px;
+    background-color: white;
+    font-size: 18px;
+    
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px; 
+
+}
+
+li a{
+    text-decoration: none;
+    color: #6b7280;
+}
+
+li a:hover{
+    color: #5A67D8;
+}
+
+.overview-hero{
+    background-color: #E2E8F0;
+}
+
+.learn-about .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+    margin-left: 160px;
+}
+
+.learn-about .cards .card {
+    border: 2px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    padding: 10px;
+}
+
