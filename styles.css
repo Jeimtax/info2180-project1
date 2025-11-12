@@ -14,6 +14,7 @@ body {
 header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: white;
     font-size: 18px;
     
@@ -40,9 +41,23 @@ li a:hover {
     padding: 30px;
 }
 
+.overview-hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.overview-hero-image img {
+    height: 200px;
+    width: 220px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
 .learn-about .cards {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 310px);
     gap: 20px;
     justify-content: center;
     
@@ -51,7 +66,6 @@ li a:hover {
 .learn-about h2 { 
     font-size: 24px;
     color: #48BB78;
-    margin-left: 160px;
 }
 
 .learn-about .cards .card {
@@ -67,17 +81,29 @@ li a:hover {
 
 }
 
+.card img {
+    height: 200px;
+    width: 280px;
+    border-radius: 5px;
+}
+
 .testing {
-    display: flex;
     background-color: #4A5568;
     color: white;
     padding: 30px;
-    margin-top: 10px;  
+    margin-top: 30px;
+    margin-bottom: 100px;  
+}
+
+.testing .container {
+    display: flex;
+    align-items: center;
+    padding: 60px;
 }
 
 .testing .testing-description {
-   flex: 1;
-    
+    max-width: 700px;
+    flex: 1; 
 }
 
 
@@ -87,6 +113,25 @@ li a:hover {
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
+}
+
+.testing .btn:hover {
+    background-color: #329259;
+}
+
+.stories article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.stories img {
+    height: 200px;
+    width: 200px;
+    border-radius: 300px;
+
 }
 
 .stories h2, a {
@@ -100,25 +145,46 @@ li a:hover {
 
 .newsletter {
     background-color: #48BB78;
-    color: white;
+    color: white;  
+}
+
+.newsletter .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-   
+    padding: 40px;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter p {
+    max-width: 450px;
+    margin-top: 0px;
+}
+
+.newsletter #email {
+    padding: 15px 130px 15px 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 .newsletter .btn {
     background-color: #5A67D8;
     color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
     background-color: #4A5568;
     color: white;
     padding: 10px;
-    text-indent: 100px;
     
 }
 
