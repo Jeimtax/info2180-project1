@@ -12,5 +12,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
         else {
             message.textContent = `Thank you! Your email address ${email} has been added to the mailing list`;
         }
-})
-})
+    });
+});
